@@ -1,0 +1,218 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background: #F6F4F2; /* Couleur de fond */
+    background: -webkit-linear-gradient(to right, #F8F8F8, #F1F1F1); /* Dégradé linéaire pour les navigateurs WebKit */
+    background: linear-gradient(to right, #F8F8F8, #F1F1F1); /* Dégradé linéaire */
+  }
+  
+  /* Sidebar */
+  nav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    height: 80vh;
+    background: #fff;
+    overflow: hidden;
+    transition: width 1s;
+  }
+  
+  nav:hover {
+    width: 280px;
+  }
+  
+  .logo {
+    text-align: center;
+    display: flex;
+    align-items: center; /* Aligner le texte verticalement */
+    margin: 10px; /* Réduire les marges */
+  }
+  
+  .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px; /* Ajouter une marge entre l'image et le texte */
+  }
+  
+  .logo span {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  /* Nav links */
+  nav a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: rgb(85, 83, 83);
+    padding: 10px;
+    transition: background-color 0.3s; /* Ajouter une transition pour un effet de survol */
+  }
+  
+  nav a:hover {
+    background: #eee;
+  }
+  
+  nav a i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+  }
+  
+  .logout {
+    position: absolute;
+    bottom: 20px; /* Espacement par rapport au bas */
+    width: 100%; /* Remplir complètement l'espace disponible */
+  }
+  
+  /* Button styles */
+  .button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 9pt ;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+  }
+  
+  button::before {
+    top: -1em;
+    left: -1em;
+  }
+  
+  button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+  }
+  
+  button:hover::before,
+  .button:hover::after {
+    height: 410px;
+    width: 410px;
+  }
+  
+  button:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  button:active {
+    filter: brightness(.8);
+  }
+  
+  /* Shared styles */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .medicaments, .panier {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .medicaments h2, .panier h2 {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #ad2929;
+    color:#333; /* Changer la couleur du texte */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+  }
+  
+  table td {
+    text-align: center;
+  }
+  
+  table tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .chart-container {
+    width: calc(80% - 40px);
+    height: 60vh;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .chart-container {
+      width: calc(100% - 40px);
+      height: 50vh;
+    }
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .btn.active {
+    background-color: #20c053;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #e0e0e0;
+  }
+  

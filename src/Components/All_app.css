@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 90px; /* Ajuster en fonction de la largeur du sidebar */
+}
+
+/* Ajustement de la hauteur du contenu par rapport au sidebar */
+.medicaments,
+.panier,
+.reglages-container,
+.change-password-container,
+.notification-container,
+.line-chart-container {
+  flex: 1;
+}
+
+.sidebar {
+  width: 90px;
+}
+
+.content {
+  flex: 1;
+}

@@ -1,0 +1,637 @@
+/* Message.css */
+:root {
+  --blue: #B5D1C3;
+  --white: #FFFDF6;
+  --gray: #C4D4E2;
+  --black1: #393F50;
+  --black2: #DEECDA;
+  --green: #63948C;
+  --red: lightcoral;
+  --blue2: #99CDD8;
+  --darkgreen:#657166;
+  --white2:#F0ECE3;
+
+
+}
+.stock-section{
+  margin-right: 5px;
+  
+}
+.input-section{
+  margin-left: 5px;
+}
+h2{
+  margin: 5px;
+  position: relative;
+  
+}
+.direct-message-container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 800px; /* Set a maximum width if needed */
+    margin: 0 auto;
+    /* Add other styles as needed */
+  }
+  
+  .message-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .message-item {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .message-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .send-button {
+    padding: 10px;
+    background-color: #10a23e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #9BA986;
+  }
+  .input {
+  background-color: #212121;
+  max-width: 190px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+
+.input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+.Supprimer{
+color: #a42222;
+font-weight: 200;
+}
+.actionButton {
+  width: 100px; /* Vous pouvez ajuster cette valeur en fonction de vos préférences */
+  padding: 8px 16px; /* Ajoutez du rembourrage pour une apparence uniforme */
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Ajoutez ces styles à votre fichier Message.css ou tout autre fichier de style approprié */
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  position: absolute;
+  width: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(237, 42, 42, 0.833);
+  z-index: 1;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.dropdown-content div {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content div:hover {
+  background-color: #f1f1f1;
+}
+/* CSS pour la barre de recherche par catégorie */
+.search-by-category {
+  margin-bottom: 10px;
+}
+
+.category-input {
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.category-input:focus {
+  outline: none;
+  border-color: blue; /* Couleur de bordure bleue lorsqu'il est en focus */
+}
+
+.category-dropdown {
+  position: relative;
+}
+
+.category-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #b6a7e3;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 40px;
+}
+
+.category-dropdown-content div {
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.category-dropdown-content div:hover {
+  background-color: #f1f1f1;
+}
+
+.category-dropdown.active .category-dropdown-content {
+  display: block;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.865);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 30px;
+  background: #ebebeb;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff6b;
+  z-index: 9999;
+  /* Center vertically */ /* Assure que le pop-up est toujours au-dessus du reste du contenu */
+}
+.popup h2{margin-bottom: 10px; 
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.popup p{ color: rgb(142, 142, 142); margin-bottom: 30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+.popup .icon {
+  margin-bottom: 10px; /* Adjust spacing between icon and content */
+  animation: shake 0.5s infinite alternate; /* Apply the shake animation */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center;
+}
+
+@keyframes shake {
+  from {
+    transform: translateY(0); /* Start position */
+  }
+  to {
+    transform: translateY(-5px); /* End position */
+  }
+}
+
+.popup .icon svg {
+  width: 40px; /* Adjust the size of the icon */
+  height: 40px;
+}
+.popup .icon svg path {
+  fill: rgb(209, 57, 57); /* Change the color to red */
+}
+.popup-content {
+  text-align: center;
+ 
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="number"],
+.popup-content input[type="date"],
+.popup-content button {
+  margin: 9px;
+  padding: 8px 25px;
+  border: 1px solid #e7e7e7;
+  border-radius: 50px;
+  border: none;
+}
+
+.popup-content button {
+
+  cursor: pointer;
+
+}
+
+
+.add-medicament-button {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.popup-content {
+  text-align: center; /* Centrer horizontalement le contenu */
+}
+
+.bbutton {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ddd;
+  font-weight: bold;
+
+}
+.bbutton:hover{
+  background-color: #add345;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+
+}
+.bbbutton {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ddd;
+  font-weight: bold;
+
+}
+.bbbutton:hover{
+  background-color: #cf512e;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.table th {
+  background-color: #f2f2f2; /* Couleur de fond pour les en-têtes de colonnes */
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Couleur de fond pour les lignes impaires */
+}
+.table-container {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ajouter une ombre légère au tableau */
+}
+.input-container{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35); /* Ajouter une ombre légère au tableau */
+
+}
+.add-medicament-button {
+  bottom: 70px; /* Position du bas par rapport au bord inférieur */
+  right: 45%; /* Position de la droite par rapport au bord droit */
+}
+.attendance-listt {
+  background: transparent;
+  display: flex;
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  height: 100vh; /* Adjusted to 100vh */
+  position: relative;
+  padding: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25), -4px -2px 16px 0px #ffffff77;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+  margin-left: 20px;
+}
+
+/* Example media query for adjusting padding on smaller screens */
+@media (max-width: 768px) {
+  .attendance-listt {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Example media query for adjusting font size on smaller screens */
+@media (max-width: 576px) {
+  .attendance-list h1 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+.attendance-list h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--black1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.attendance {
+  margin-top: 20px;
+}
+
+.attendance-list {
+  margin-bottom: 20px;
+}
+
+
+
+.id {
+  height: 60px;
+  width: 200px;
+  background-color: #ccd8dd;
+  border: 2px solid rgba(255, 255, 255, 0.695);
+  color: #7e97b8;
+  transition: .6s;
+  font-size: 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  overflow: hidden;
+  cursor: pointer;
+  position: fixed;
+  top: 20px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  z-index: 999;
+  margin-right: 10px;
+  
+}
+
+.id span {
+  transform: translateX(0);
+  transition: .5s;
+}
+
+.id svg{
+  transform: translateX(-400px);
+  transition: .6s;
+  z-index: 3;
+  height: 40px;
+}
+
+.id:hover {
+  width: 60px;
+  background-color: #ccd8ddd4;
+  box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
+  border-radius: 50px 15px 50px 50px;
+  color: #7e97b8;
+
+ 
+}
+
+.id:hover svg {
+   /* Adjust the height as needed */
+  color: #d38686;
+  transform: translateX(0); /* Change from -400px to 0 */
+
+}
+
+
+.id:hover span {
+  transform: translateX(-400px); /* Adjust the distance to move the SVG to the side */
+
+  font-size: .1rem;
+ 
+}
+/* Add this CSS to your existing CSS file or style tag */
+
+.cunt {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.button-container{
+  position: absolute;
+  top: 10px; /* Adjust this value as needed */
+  right: 10px; /* Adjust this value as needed */
+  
+}
+.search-containerr {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-containerr input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #7e97b8;
+ background-color: #e0e8ef9f;
+ border-style: solid;
+ border-width: 2px 2px 2px 2px;
+ border-color: rgba(255, 255, 255, 0.333);
+ border-radius: 40px 40px 40px 40px;
+ transform: translate(0px, 0px) rotate(0deg);
+ transition: 0.2s;
+ box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgba(8, 23, 41, 0.383);
+  
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.search-containerr.active input {
+  border-color: 2px solid #ccd8dd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 40px 40px 40px 40px;
+    outline: none;
+    background-color: transparent;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3), -4px -2px 16px 0px #ffffff8e, 4px 2px 16px 0px rgba(8, 23, 41, 0.383);
+    transition: 300ms ease-in-out;
+ /* Example of changing border color when active */
+}
+
+.search-containerr .search-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.483); /* Example of styling the search line */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  
+  
+}
+
+.search-containerr.active .search-line {
+  transform: scaleX(1);
+}
+
+
+
+ .CartBtn {
+  width: 140px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  background-color:#ccd8dd;
+  border: 2px solid rgba(255, 255, 255, 0.695);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .5s;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+   position: fixed;
+  top: 20px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  z-index: 999;
+  margin-right: 10px;
+  border-radius: 50px 50px 50px 50px;
+
+}
+
+.IconContainer {
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .5s;
+  
+}
+
+.icon {
+  border-radius: 1px;
+  color: #7e97b8;
+
+  
+}
+
+.text {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7e97b8;
+  z-index: 1;
+  transition-duration: .5s;
+  font-size: 1.04em;
+  font-weight: 600;
+}
+.CartBtn:hover{
+  background-color: #ccd8ddd4;
+  box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
+  border-radius: 50px 15px 50px 50px;
+ 
+
+}
+
+.CartBtn:hover .IconContainer {
+  transform: translateX(58px);
+  border-radius: 40px;
+  transition-duration: .5s;
+  
+}
+
+.CartBtn:hover .text {
+  transform: translate(10px,0px);
+  transition-duration: .5s;
+}
+
+.CartBtn:active {
+  transform: scale(0.95);
+  transition-duration: .5s;
+}
+/* Style the select element */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #a71b1b;
+  border-radius: 5px;
+  appearance: 10px; /* Hide the default arrow */
+  background-color: #fb0101;
+  cursor: pointer;
+}
+
+/* Style the select arrow */
+.select-wrapper::after {
+  content: '\25BC'; /* Unicode for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* Style the options */
+.select-wrapper select option {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Style the selected option */
+.select-wrapper select option:checked {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+.categoryy {
+  width: 30%;
+  border-radius: 10px;
+  background: #e3e3e3;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.071), -4px -2px 16px 0px #ffffff77;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px; /* Add padding to give space between border and text */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Text color */
+}
+
+/* Style the options */
+.categoryy option {
+  background: white; /* Background color of options */
+  color: #333; /* Text color of options */
+  font-size: 16px; /* Font size of options */
+}
+.categoryy-dropdown-content{
+  color: #a42222;
+
+}

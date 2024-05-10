@@ -1,0 +1,177 @@
+/* Presence.css */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+ 
+}
+
+.medicaments, .panier {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.medicaments h2, .panier h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  
+  border-collapse: collapse;
+  margin-bottom: 20px;
+ 
+}
+
+table th, table td {
+  padding: 8px;
+  border-bottom: 1px solid #ed2727;
+}
+
+table th {
+  background-color: #331c1c;
+}
+
+table td {
+  text-align: center;
+}
+
+table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Presence.css */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.medicaments,
+.panier {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.medicaments h2,
+.panier h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  border-color: transparent;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table th {
+  background-color: #e0e8ef;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  color: #7e97b8;
+}
+
+table td {
+  text-align: center;
+}
+
+table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+table tbody tr{
+  /* Add this CSS to your existing CSS file or style tag */
+  height: 50px; /* Set a fixed height for the table rows */
+  overflow: hidden; /* Hide any overflow content */
+
+
+}
+.CartBtnn {
+  width: 140px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  background-color:#ccd8dd;
+  border: 2px solid rgba(255, 255, 255, 0.695);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .5s;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  
+ 
+  
+  border-radius: 50px 50px 50px 50px;
+
+}
+
+.IconContainer {
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .5s;
+  
+}
+
+.icon {
+  border-radius: 1px;
+  color: #7e97b8;
+
+  
+}
+
+.text {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #412945;
+  z-index: 1;
+  transition-duration: .5s;
+  font-size: 1.04em;
+  font-weight: 600;
+}
+.CartBtnn:hover{
+  background-color: #ccd8ddd4;
+  box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
+  
+ 
+
+}
+
+.CartBtnn:hover .IconContainer {
+  transform: translateX(58px);
+  border-radius: 40px;
+  transition-duration: .5s;
+  
+}
+
+.CartBtnn:hover .text {
+  transform: translate(10px,0px);
+  transition-duration: .5s;
+}
+
+.CartBtnn:active {
+  transform: scale(0.95);
+  transition-duration: .5s;
+}

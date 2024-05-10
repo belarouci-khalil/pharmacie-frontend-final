@@ -1,0 +1,8 @@
+export {default as Sidebar} from './Sidebar'
+export {default as Stockk} from './Stockk'
+export {default as Dashbord} from'./Dashbord' 
+export {default as Presence} from './Presence'
+export {default as Reglages} from './Reglages'
+export{default as LineChart} from './LineChart'
+export{default as Notification}from './Notification'
+export{default as SaleHistory} from './SaleHistory'

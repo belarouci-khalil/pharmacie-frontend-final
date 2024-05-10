@@ -1,0 +1,103 @@
+/* Stock.css */ 
+.containerr { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 110%;
+    padding: 20px;
+    box-sizing: border-box; }
+
+.stock-section { width: 70%;
+  margin-bottom: 30px; } 
+.input-section {
+  width: 25%;
+margin-left: 5%;
+}
+
+.table-container {
+width: 100%;
+ border-collapse: collapse;
+ table-layout: auto;
+}
+
+.stock-section h2 { 
+font-size: 2rem; 
+font-weight: bold; 
+margin-bottom: 1.5rem;
+color: #5dbb57; }
+.input-section { 
+width: 25%; 
+margin-left: 5%; } 
+
+
+.input-section h2 { 
+ font-size: 2rem;
+ font-weight: bold; 
+ margin-bottom: 1.5em; }/* Use em units for vertical spacing to ensure consistency with font sizes */
+
+ .table-container { 
+  width: 100%;
+   border-collapse: collapse; } 
+
+   .table-container th, .table-container td {
+     padding: 10px; 
+    border: 1px solid #8fbc96; } 
+
+
+ .table-container th { 
+ background-color: #58b665; 
+font-weight: bold; }
+
+
+
+.popup { position: fixed;
+ top: 0; 
+ left: 0;
+  width: 100%;
+  height: 100%;
+ background-color: rgba(5, 0, 0, 0.5); 
+  display: flex; 
+ justify-content: center; 
+ align-items: center; }
+
+ .popup-content {
+  background-color: #5e967b;
+ padding: 20px; 
+ border-radius: 5px; 
+ box-shadow: 0 4px 6px rgba(4, 4, 4, 0.1); } 
+ 
+ .popup-content h2 { 
+font-size: 1.5rem; 
+ font-weight: bold; 
+  margin-bottom: 20px; } 
+  
+  .popup-content input, 
+  .popup-content select { 
+ width: 100%; 
+ padding: 10px; 
+ margin-bottom: 10px;
+ border: 1px solid #7da687; 
+ border-radius: 5px; 
+ box-sizing: border-box; } 
+
+ .popup-content button { width: 100%; 
+ padding: 10px; 
+ background-color: #527e54;
+ color: #ffffff; 
+ border: none; 
+ border-radius: 5px; 
+ cursor: pointer; } 
+ .popup-content button:hover { background-color: #45a049; }
+.add-medication-button { width: 26%;
+ padding: 10px; 
+background-color: #527e54; 
+color: #fff; border: none; 
+border-radius: 10px; cursor: pointer; 
+position: absolute;
+top: 20%;
+left: 80%;
+transform: translate(-50%, -50%);
+}
+                           
+.add-medication-button:hover { background-color: #45a049; } 

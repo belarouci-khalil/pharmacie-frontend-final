@@ -1,0 +1,171 @@
+/* Reglages.css */
+
+.reglages-container {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    margin-left: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25),-4px -2px 16px 0px #ffffff77;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+    background: #ffffff5d;
+    color: #412945;
+
+  }
+ 
+  
+  
+  .change-password-container {
+    margin-top: 30px;
+  }
+  
+  .password-input {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 2px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 9pt ;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   button:hover {
+    color: rgb(255, 255, 255);
+   }
+   
+   button:active {
+    filter: brightness(.8);
+   }
+   .reglages-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+
+  }
+  
+  .language-switcher {
+    margin-bottom: 20px;
+  }
+  
+  .language-switcher button {
+    margin-right: 10px;
+  }
+  
+  .change-password-container,
+  .change-username-container {
+    margin-bottom: 20px;
+  }
+  
+  .password-input,
+  .username-input {
+    margin-bottom: 10px;
+  }
+  
+  .password-input label,
+  .username-input label {
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .password-input input,
+  .username-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .logoo {
+    text-align: center;
+    display: flex;
+  
+  }
+  
+  .logoo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  
+  .logoo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  

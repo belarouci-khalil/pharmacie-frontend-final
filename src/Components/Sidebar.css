@@ -1,0 +1,143 @@
+/* Sidebar.css */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-image: '../Pics/idkkm.png';
+
+  
+}
+body {
+  
+  background-image: url('../Pics/p1.png');
+  height: 100%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 95vh;  /* Ajustement de la hauteur */
+  left: 0;
+  width: 90px;
+  background: #6e73ffdc;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: width 1s, opacity 1s;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.107), -4px -2px 16px 0px #ffffff2b;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  
+}
+
+nav:hover {
+ 
+  width:260px;
+  transition: 0.7s;
+  background-color: rgba(255, 255, 255, 0.358);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(8px);
+  background-image: url('../Pics/pharmacyt.png');
+
+  
+}
+nav {
+  background-image: url('../Pics/pharmacy.png');
+  background-size: contain; /* Adjust size of the image */
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a{
+  position: relative;
+  width: 260px; /* Ajustement de la largeur */
+  font-size: 15px;
+  color: var(--blue);
+  display: table;
+  padding: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  
+}
+
+
+
+nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #412945;
+  
+
+}
+
+
+.nav-item {
+  position: relative;
+  top: 90x;
+  margin-left: 9px;
+  color: #412945;
+}
+.nav-itemm {
+  position: relative;
+  top: 90x;
+  margin-bottom: 50px;
+  margin-left: 9px;
+  color: #412945;
+}
+
+
+
+a:hover {
+  color: #412945;
+  border-radius: 10px;
+  font-weight: bold;
+  
+}
+
+a:hover i {
+  color: #B5E1E8;
+  transition: 0.2s;
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+.sidebar{
+  height: 100%;
+}

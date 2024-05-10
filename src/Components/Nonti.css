@@ -1,0 +1,76 @@
+/* NotificationComponent.css */
+
+
+  
+  .notification-container {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
+  }
+  
+ 
+  
+  .notification-title {
+    color: #ff0000;
+    
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .notification-item span {
+    color: red;
+  }
+  
+  
+  .notification-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notification-item {
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notification-item:hover {
+    background-color: #f0f4f8;
+  }
+  .notification-container {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
+  }
+  
+  .notification-title {
+    color: #ff0000;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .notification-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notification-item {
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notification-item:hover {
+    background-color: #f0f4f8;
+  }
+  
+  .notification-item span {
+    color: red;
+  }
+  
